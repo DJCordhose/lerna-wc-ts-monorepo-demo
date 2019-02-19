@@ -1,0 +1,7 @@
+{
+  "name": "pkg2",
+  "version": "0.0.0",
+  "dependencies": {
+    "lit-element": "^2.0.1"
+  }
+}

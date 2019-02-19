@@ -1,0 +1,6 @@
+{
+  "entrypoint": "index.html",
+  "builds": [
+    {"name": ".", "browserCapabilities": ["es2016"]}
+  ]
+}

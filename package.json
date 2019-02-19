@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "watch": "tsc -w",
+    "compile": "tsc",
+    "clean": "del packages/**/*.js packages/**/*.js.map packages/**/*.d.ts packages/**/*.d.ts.map",
+    "dev": "polyserve",
+    "prpl": "prpl-server --root packages/pkg1 --config polymer.json"
+  },
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "lerna": "^3.13.0",
+    "polyserve": "^0.27.15",
+    "prpl-server": "^1.4.0",
+    "typescript": "^3.3.3"
+  }
+}
