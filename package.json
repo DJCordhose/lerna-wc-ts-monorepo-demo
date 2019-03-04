@@ -9,11 +9,18 @@
     "tsc:watch": "tsc -w",
     "dev": "polyserve",
     "prod": "yarn tsc && cross-env NODE_ENV=production parcel build demo/index.html",
-    "clean": "node_modules/.bin/del dist packages/**/*.js packages/**/*.js.map packages/**/*.d.ts packages/**/*.d.ts.map"
+    "clean": "node_modules/.bin/del dist packages/**/*.js packages/**/*.js.map packages/**/*.d.ts packages/**/*.d.ts.map",
+    "lint": "eslint packages --debug"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
     "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-lit": "^0.6.0",
+    "eslint-plugin-wc": "^1.0.0",
     "lerna": "^3.13.0",
     "parcel-bundler": "^1.11.0",
     "polyserve": "^0.27.15",

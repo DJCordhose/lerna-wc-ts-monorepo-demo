@@ -3,7 +3,7 @@ import 'pkg2/my-other-element'
 const template = `
 <p>Package 1</p>
 <other-element></other-element>
-`;
+`
 
 class MyElement extends HTMLElement {
     constructor() {
