@@ -5,14 +5,17 @@
     "packages/*"
   ],
   "scripts": {
-    "watch": "tsc -w",
-    "compile": "tsc",
-    "clean": "del packages/**/*.js packages/**/*.js.map packages/**/*.d.ts packages/**/*.d.ts.map",
-    "dev": "polyserve"
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
+    "dev": "polyserve",
+    "prod": "yarn tsc && cross-env NODE_ENV=production parcel build demo/index.html",
+    "clean": "node_modules/.bin/del dist packages/**/*.js packages/**/*.js.map packages/**/*.d.ts packages/**/*.d.ts.map"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
     "lerna": "^3.13.0",
+    "parcel-bundler": "^1.11.0",
     "polyserve": "^0.27.15",
     "typescript": "^3.3.3"
   }
