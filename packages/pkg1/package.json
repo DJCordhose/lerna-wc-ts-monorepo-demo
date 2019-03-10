@@ -1,7 +1,17 @@
 {
   "name": "pkg1",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "files": [
+    "/*.js",
+    "/*.d.ts",
+    "/*.js.map",
+    "/*.d.ts.map",
+    "!/test/"
+  ],
+  "scripts": {
+    "pub:check": "npm publish --dry-run"
+  },
   "dependencies": {
-    "pkg2": "^0.0.0"
+    "pkg2": "^0.0.1"
   }
 }

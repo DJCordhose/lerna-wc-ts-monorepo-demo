@@ -1,6 +1,16 @@
 {
   "name": "pkg2",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "files": [
+    "/*.js",
+    "/*.d.ts",
+    "/*.js.map",
+    "/*.d.ts.map",
+    "!/test/"
+  ],
+  "scripts": {
+    "pub:check": "npm publish --dry-run"
+  },
   "dependencies": {
     "lit-element": "^2.0.1"
   }
