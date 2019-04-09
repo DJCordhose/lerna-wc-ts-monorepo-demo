@@ -7,5 +7,14 @@
   </head>
   <body>
     <my-element></my-element>
+    <button>Click to change name of greeting</button>
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        // horrible code, breaking isolation on open shadow roots, but only here to prove the point of changing a property
+        const myElement = document.querySelector('my-element')
+        const otherElement = myElement.shadowRoot.querySelector('other-element');
+        otherElement.name = 'changed via property';
+      })
+    </script>
   </body>
 </html>

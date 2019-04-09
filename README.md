@@ -4,8 +4,14 @@ Playground Monorepo using lerna, web components, lit element, typescript
 
 ## Dev Workflow
 
-Run `yarn tsc:watch` in one terminal and `yarn dev` in another. One builds the app and listens to changes
+
+
+Run `yarn start` which starts two tasks. One builds the app and listens to changes
 and the other serves the files as they are requested by the browser, rewriting imports.
+
+Then open the demo app under
+
+`/demo/index.html`
 
 ## Tools
 
